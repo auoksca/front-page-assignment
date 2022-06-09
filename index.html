@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script>
+      function funny(){
+      var name1 = document.getElementById("name").value;
+      localStorage.setItem("names" , name1);
+      var usn1 = document.getElementById("usn").value;
+      localStorage.setItem("usns", usn1);
+      var sub1 = document.getElementById("sub").value;
+      localStorage.setItem("subs", sub1);
+      var code1 = document.getElementById("code").value;
+      localStorage.setItem("codes", code1);
+      var set1 = document.getElementById("set").value;
+      localStorage.setItem("sets", set1);
+      var submis1 = document.getElementById("dos").value;
+      localStorage.setItem("submisses", submis1);
+      var acad1 = document.getElementById("acad").value;
+      localStorage.setItem("acads", acad1);
+      return false;
+      }
+    </script>
+  </head>
+  <body>
+    <form style="text-align: center;margin-top: 250px;" action="second.html">
+      <input id="name"  type="text" placeholder="Enter Your Name"><br>
+      <input id="usn"  type="text" placeholder="Enter Your USN"><br>
+      <input id="sub"  type="text" placeholder="Enter The Subject Name"><br>
+      <input id="code" type="text" placeholder="Enter The Subject Code"><br>
+      <input type="text" placeholder="Enter Set Number" id="set"><br>
+      <input type="text" onfocus="(this.type='date')" placeholder=" Enter Date Of Submission" id="dos"><br>
+      <input type="text" placeholder=" Enter Academic Year" id="acad"><br>
+      <input type="submit" value="Submit" onclick="funny()">
+    </form>
+    <br><br>
+    <h2 style="text-align: center;">Alert!!!</h2>
+    <p style="text-align: center;">After Submission Click On Academic Year Text To Print</p>
+  </body>
+</html>
